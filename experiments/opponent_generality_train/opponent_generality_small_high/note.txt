@@ -1,0 +1,48 @@
+experiment 3: training against different opponents on the same domain
+
+ --- SETTINGS-- 
+{
+    "uva.projectai.y2018.jasparon.LookBackQlearner": {
+        "hyperparams": {
+            "bins": [
+                10
+            ],
+            "time_bins": [
+                5
+            ],
+            "epsilons": [
+                0.1
+            ],
+            "alphas": [
+                0.15
+            ]
+        },
+        "negotiation": {
+            "opponents": [
+                "uva.projectai.y2018.jasparon.AverageTitForTat1",
+                "uva.projectai.y2018.jasparon.AverageTitForTat2",
+                "agents.TimeDependentAgentLinear",
+                "agents.TimeDependentAgentBoulware"
+            ],
+            "opponentModels": [
+                "FrequencyModel"
+            ],
+            "profiles": [
+                {
+                    "a": "JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util4.xml",
+                    "b": "JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util5.xml"
+                }
+            ],
+            "offeringStrategies": [
+                "QlearningStrategy"
+            ],
+            "rounds": [
+                40
+            ],
+            "repeats": [
+                1
+            ],
+            "tournaments": 15000
+        }
+    }
+}

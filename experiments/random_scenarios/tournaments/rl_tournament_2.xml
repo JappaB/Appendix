@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+ 			<multilateralTournamentsConfiguration> 
+				<tournaments>
+<tournament> 
+	<deadline> 
+		<value>40</value> 
+		<type>ROUND</type> 
+	</deadline> 
+	<protocolItem hasMediatorProfile="false" hasMediator="false" 
+		description="Each agents makes offer, counter-offer, or accepts" 
+		classPath="genius.core.protocol.StackedAlternatingOffersProtocol" 
+		protocolName="Stacked Alternating Offers Protocol for Multi-Lateral Negotiation (SAOPMN)" /> 
+	<partyRepItems> 
+		<party classPath="agents.TimeDependentAgentLinear"> 
+			<properties /> 
+		</party> 
+		<party  
+			classPath="uva.projectai.y2018.jasparon.RandomBOAagent" 
+			strategyParameters="epsilon=0.1;bins=10;time_bins=5;strategy=QlearningStrategy;alpha=0.15;opponentModel=FrequencyModel;opponentName=TimeDependentAgentLinear;_mode=train;_path_to_qtable=experiments/random_scenarios/qtables/2_"> 
+			<properties /> 
+		</party> 
+	</partyRepItems> 
+	<partyProfileItems> 
+		<item url="file:etc/templates/JaspAronLargeDiscreteDomain/JaspAronLargeDiscreteDomain_util1.xml" /> 
+        <item url="file:etc/templates/JaspAronLargeDiscreteDomain/JaspAronLargeDiscreteDomain_util2.xml" /> 
+	</partyProfileItems> 
+	<repeats>100</repeats> 
+	<numberOfPartiesPerSession>2</numberOfPartiesPerSession> 
+	<repetitionAllowed>false</repetitionAllowed> 
+	<persistentDataType>DISABLED</persistentDataType> 
+	<enablePrint>false</enablePrint> 
+</tournament>	</tournaments> 
+ 	</multilateralTournamentsConfiguration>

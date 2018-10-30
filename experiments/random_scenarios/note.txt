@@ -1,0 +1,67 @@
+random baseline for lookback_scenarios experiment
+
+ --- SETTINGS-- 
+{
+    "uva.projectai.y2018.jasparon.RandomBOAagent": {
+        "hyperparams": {
+            "bins": [
+                10
+            ],
+            "time_bins": [
+                5
+            ],
+            "epsilons": [
+                0.1
+            ],
+            "alphas": [
+                0.15
+            ]
+        },
+        "negotiation": {
+            "opponents": [
+                "uva.projectai.y2018.jasparon.AverageTitForTat1",
+                "uva.projectai.y2018.jasparon.AverageTitForTat2",
+                "agents.TimeDependentAgentLinear",
+                "agents.TimeDependentAgentBoulware"
+            ],
+            "opponentModels": [
+                "FrequencyModel"
+            ],
+            "profiles": [
+                {
+                    "a": "JaspAronLargeDiscreteDomain/JaspAronLargeDiscreteDomain_util1.xml",
+                    "b": "JaspAronLargeDiscreteDomain/JaspAronLargeDiscreteDomain_util2.xml"
+                },
+                {
+                    "a": "JaspAronLargeDiscreteDomain/JaspAronLargeDiscreteDomain_util3.xml",
+                    "b": "JaspAronLargeDiscreteDomain/JaspAronLargeDiscreteDomain_util4.xml"
+                },
+                {
+                    "a": "JaspAronMediumDiscreteDomain/JaspAronMediumDiscreteDomain_util1.xml",
+                    "b": "JaspAronMediumDiscreteDomain/JaspAronMediumDiscreteDomain_util2.xml"
+                },
+                {
+                    "a": "JaspAronMediumDiscreteDomain/JaspAronMediumDiscreteDomain_util3.xml",
+                    "b": "JaspAronMediumDiscreteDomain/JaspAronMediumDiscreteDomain_util4.xml"
+                },
+                {
+                    "a": "JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util1.xml",
+                    "b": "JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util3.xml"
+                },
+                {
+                    "a": "JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util4.xml",
+                    "b": "JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util5.xml"
+                }
+            ],
+            "offeringStrategies": [
+                "QlearningStrategy"
+            ],
+            "rounds": [
+                40
+            ],
+            "repeats": [
+                100
+            ]
+        }
+    }
+}

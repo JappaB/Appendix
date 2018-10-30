@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+ 			<multilateralTournamentsConfiguration> 
+				<tournaments>
+<tournament> 
+	<deadline> 
+		<value>40</value> 
+		<type>ROUND</type> 
+	</deadline> 
+	<protocolItem hasMediatorProfile="false" hasMediator="false" 
+		description="Each agents makes offer, counter-offer, or accepts" 
+		classPath="genius.core.protocol.StackedAlternatingOffersProtocol" 
+		protocolName="Stacked Alternating Offers Protocol for Multi-Lateral Negotiation (SAOPMN)" /> 
+	<partyRepItems> 
+		<party classPath="uva.projectai.y2018.jasparon.AverageTitForTat1"> 
+			<properties /> 
+		</party> 
+		<party  
+			classPath="uva.projectai.y2018.jasparon.LookBackQlearner" 
+			strategyParameters="epsilon=0.1;bins=10;time_bins=5;strategy=QlearningStrategy;alpha=0.15;opponentModel=FrequencyModel;opponentName=AverageTitForTat1;_mode=eval;_path_to_qtable=/Volumes/Macintosh_HD/Users/Aron/IdeaProjects/ProjectAI/experiments/opponent_generality_small_high/qtables/Q.table"> 
+			<properties /> 
+		</party> 
+	</partyRepItems> 
+	<partyProfileItems> 
+		<item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util4.xml" /> 
+        <item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util5.xml" /> 
+	</partyProfileItems> 
+	<repeats>1</repeats> 
+	<numberOfPartiesPerSession>2</numberOfPartiesPerSession> 
+	<repetitionAllowed>false</repetitionAllowed> 
+	<persistentDataType>DISABLED</persistentDataType> 
+	<enablePrint>false</enablePrint> 
+</tournament><tournament> 
+	<deadline> 
+		<value>40</value> 
+		<type>ROUND</type> 
+	</deadline> 
+	<protocolItem hasMediatorProfile="false" hasMediator="false" 
+		description="Each agents makes offer, counter-offer, or accepts" 
+		classPath="genius.core.protocol.StackedAlternatingOffersProtocol" 
+		protocolName="Stacked Alternating Offers Protocol for Multi-Lateral Negotiation (SAOPMN)" /> 
+	<partyRepItems> 
+		<party classPath="agents.TimeDependentAgentBoulware"> 
+			<properties /> 
+		</party> 
+		<party  
+			classPath="uva.projectai.y2018.jasparon.LookBackQlearner" 
+			strategyParameters="epsilon=0.1;bins=10;time_bins=5;strategy=QlearningStrategy;alpha=0.15;opponentModel=FrequencyModel;opponentName=TimeDependentAgentBoulware;_mode=eval;_path_to_qtable=/Volumes/Macintosh_HD/Users/Aron/IdeaProjects/ProjectAI/experiments/opponent_generality_small_high/qtables/Q.table"> 
+			<properties /> 
+		</party> 
+	</partyRepItems> 
+	<partyProfileItems> 
+		<item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util4.xml" /> 
+        <item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util5.xml" /> 
+	</partyProfileItems> 
+	<repeats>1</repeats> 
+	<numberOfPartiesPerSession>2</numberOfPartiesPerSession> 
+	<repetitionAllowed>false</repetitionAllowed> 
+	<persistentDataType>DISABLED</persistentDataType> 
+	<enablePrint>false</enablePrint> 
+</tournament><tournament> 
+	<deadline> 
+		<value>40</value> 
+		<type>ROUND</type> 
+	</deadline> 
+	<protocolItem hasMediatorProfile="false" hasMediator="false" 
+		description="Each agents makes offer, counter-offer, or accepts" 
+		classPath="genius.core.protocol.StackedAlternatingOffersProtocol" 
+		protocolName="Stacked Alternating Offers Protocol for Multi-Lateral Negotiation (SAOPMN)" /> 
+	<partyRepItems> 
+		<party classPath="uva.projectai.y2018.jasparon.AverageTitForTat2"> 
+			<properties /> 
+		</party> 
+		<party  
+			classPath="uva.projectai.y2018.jasparon.LookBackQlearner" 
+			strategyParameters="epsilon=0.1;bins=10;time_bins=5;strategy=QlearningStrategy;alpha=0.15;opponentModel=FrequencyModel;opponentName=AverageTitForTat2;_mode=eval;_path_to_qtable=/Volumes/Macintosh_HD/Users/Aron/IdeaProjects/ProjectAI/experiments/opponent_generality_small_high/qtables/Q.table"> 
+			<properties /> 
+		</party> 
+	</partyRepItems> 
+	<partyProfileItems> 
+		<item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util4.xml" /> 
+        <item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util5.xml" /> 
+	</partyProfileItems> 
+	<repeats>1</repeats> 
+	<numberOfPartiesPerSession>2</numberOfPartiesPerSession> 
+	<repetitionAllowed>false</repetitionAllowed> 
+	<persistentDataType>DISABLED</persistentDataType> 
+	<enablePrint>false</enablePrint> 
+</tournament><tournament> 
+	<deadline> 
+		<value>40</value> 
+		<type>ROUND</type> 
+	</deadline> 
+	<protocolItem hasMediatorProfile="false" hasMediator="false" 
+		description="Each agents makes offer, counter-offer, or accepts" 
+		classPath="genius.core.protocol.StackedAlternatingOffersProtocol" 
+		protocolName="Stacked Alternating Offers Protocol for Multi-Lateral Negotiation (SAOPMN)" /> 
+	<partyRepItems> 
+		<party classPath="agents.TimeDependentAgentLinear"> 
+			<properties /> 
+		</party> 
+		<party  
+			classPath="uva.projectai.y2018.jasparon.LookBackQlearner" 
+			strategyParameters="epsilon=0.1;bins=10;time_bins=5;strategy=QlearningStrategy;alpha=0.15;opponentModel=FrequencyModel;opponentName=TimeDependentAgentLinear;_mode=eval;_path_to_qtable=/Volumes/Macintosh_HD/Users/Aron/IdeaProjects/ProjectAI/experiments/opponent_generality_small_high/qtables/Q.table"> 
+			<properties /> 
+		</party> 
+	</partyRepItems> 
+	<partyProfileItems> 
+		<item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util4.xml" /> 
+        <item url="file:etc/templates/JaspAronSmallDiscreteDomain/JaspAronSmallDiscreteDomain_util5.xml" /> 
+	</partyProfileItems> 
+	<repeats>1</repeats> 
+	<numberOfPartiesPerSession>2</numberOfPartiesPerSession> 
+	<repetitionAllowed>false</repetitionAllowed> 
+	<persistentDataType>DISABLED</persistentDataType> 
+	<enablePrint>false</enablePrint> 
+</tournament>	</tournaments> 
+ 	</multilateralTournamentsConfiguration>
